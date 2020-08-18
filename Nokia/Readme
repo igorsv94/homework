@@ -1,0 +1,5 @@
+Used packages:
+
+googletest 1.10.0-2
+gtest 1.10.0-2
+gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)
