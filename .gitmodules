@@ -1,0 +1,3 @@
+[submodule "qtSkillsDemo"]
+	path = qtSkillsDemo
+	url = git@github.com:igorsv94/qtSkillsDemo.git
