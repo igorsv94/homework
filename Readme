@@ -2,3 +2,5 @@ It is homework for employers which I did.
 
 tools required:
 - GoogleTest for Nokia (see Nokia/Readme)
+- Qt5.8, cmake for QtQMLDemo
+- Qt5+, QSQLite for QtSkillsDemo
