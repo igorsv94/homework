@@ -57,13 +57,13 @@ int testCase(const char *info, DWORD inOffset, DWORD outOffset, DWORD dataSize)
     }
 
     if (DEBUG) { // dump arrays before BinaryDataTransfer() will be used
-		    hexDump((void*)pDin, ARR_IN_SIZE * sizeof(DWORD));
+        hexDump((void*)pDin, ARR_IN_SIZE * sizeof(DWORD));
         printf("\n");
-		    hexDump((void*)pDout, ARR_OUT_SIZE * sizeof(DWORD));
+        hexDump((void*)pDout, ARR_OUT_SIZE * sizeof(DWORD));
     }
 
     // call of the tested function
-		BinaryDataTransfer(pDin, inOffset, pDout, outOffset, dataSize);
+        BinaryDataTransfer(pDin, inOffset, pDout, outOffset, dataSize);
 
     // make pDin comparable with pDout. Warning! it will change pDin
     if (inOffset == outOffset) {
@@ -88,10 +88,10 @@ int testCase(const char *info, DWORD inOffset, DWORD outOffset, DWORD dataSize)
     }
 
     if (DEBUG) {
-		    printf("Result:\nWarning! pDin may be different than it was\n");
-		    hexDump((void*)pDin, ARR_IN_SIZE * sizeof(DWORD));
-        printf("\n");
-		    hexDump((void*)pDout, ARR_OUT_SIZE * sizeof(DWORD));
+       printf("Result:\nWarning! pDin may be different than it was\n");
+       hexDump((void*)pDin, ARR_IN_SIZE * sizeof(DWORD));
+       printf("\n");
+       hexDump((void*)pDout, ARR_OUT_SIZE * sizeof(DWORD));
     }
 
     // say a result of the current test-case
