@@ -1,4 +1,5 @@
 CC = gcc
+FLAGS = -std=c99
 LIBINC = -L./binaryLib/bin
 INC = -I ./binaryLib/include $(LIBINC)
 LIB = -lbinary 
@@ -9,7 +10,7 @@ lib:
 	cd binaryLib/ && make
 
 test:
-	$(CC) $(INC) test.c -o runTest $(LIB)
+	$(CC) $(FLAGS) $(INC) test.c -o runTest $(LIB)
 
 clean:
 	cd binaryLib/ && make clean
